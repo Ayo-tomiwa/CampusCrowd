@@ -338,14 +338,14 @@ body{
 
 .projects-section {
     background-color: #004d40;
-    padding: 60px 0;
+    padding: 100px 0;
     text-align: center;
 }
 
 .projects-title {
     font-size: 2rem;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     font-weight: 600;
 }
 
@@ -438,7 +438,8 @@ body{
 }
 
 .view-all {
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-right: 7rem;
     padding: 10px 20px;
     background-color: transparent;
     color: #fff;
