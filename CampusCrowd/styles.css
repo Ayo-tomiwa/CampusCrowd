@@ -23,6 +23,7 @@ body{
     width: 100%;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(223, 223, 223, 0.2);
+    /* position: fixed; */
 }
 
 .nav-bar {
@@ -33,7 +34,6 @@ body{
     margin: 0 auto;
     text-align: center;
     justify-content: space-between;
-    
 }
 
 
@@ -352,13 +352,14 @@ body{
 .projects-wrapper {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .project-card {
-    background-color: #fff;
-    width: 300px;
+    background-color: #ffffff;
+    width: 250px;
+    height: 400px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -390,10 +391,11 @@ body{
     background-color: #e0e0e0;
     height: 5px;
     width: 100%;
+    max-width: 200px;
     border-radius: 5px;
     margin: 15px 0;
-    position: relative;
-    overflow: hidden;
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    display: flex;
     cursor: pointer;
 }
 
@@ -401,6 +403,7 @@ body{
     background-color: #004d40;
     height: 100%;
     width: 70%;
+    min-width: 100%; /* Ensure it stays full width for scrolling */
     border-radius: 5px;
     transition: width 2s ease;
 }
@@ -434,7 +437,6 @@ body{
 }
 
 .view-all {
-    /* display: inline-block; */
     margin-top: 30px;
     padding: 10px 20px;
     background-color: transparent;
