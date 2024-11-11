@@ -358,7 +358,7 @@ body{
 
 .project-card {
     background-color: #ffffff;
-    width: 250px;
+    width: 300px;
     height: 400px;
     border-radius: 10px;
     overflow: hidden;
@@ -375,14 +375,14 @@ body{
 }
 
 .project-name {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #004d40;
     margin-top: 15px;
     font-weight: bold;
 }
 
 .project-description {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #666;
     margin: 10px 0;
 }
@@ -421,6 +421,7 @@ body{
     padding: 5px 10px;
     border-radius: 15px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .view-project {
@@ -453,6 +454,84 @@ body{
     background-color: #fff;
     color: #004d40;
 }
+
+/* General styling for the testimonial section */
+.testimonial-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.testimonial-content {
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-stars {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-details {
+    text-align: left;
+}
+
+.author-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.author-title {
+    font-size: 0.875rem;
+    color: #777;
+    margin: 0;
+}
+
+.testimonial-pagination {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pagination-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-dot.active {
+    background-color: #2ecc71; /* Adjust color as needed */
+}
+
 
 
 
