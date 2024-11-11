@@ -43,3 +43,26 @@ function updateProgress(event) {
 document.querySelectorAll(".progress-bar").forEach(bar => {
     bar.addEventListener("mousedown", startScroll);
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function(){
+    const testimonials = document.querySelectorAll(".testimonial-content");
+    const dots = document.querySelectorAll(".pagination-dot")
+    let currentIndex = 0;
+    const intervalTime = 5000; // 5 seconds
+
+    // Function to update active testimonial and dot
+    function updateTestimonial(index){
+        testimonials.forEach((testimonial, i) =>{
+            testimonial.classList.toggle("active", i == index);
+        });
+        dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === index);
+        });
+        currentIndex = index  
+    }
+
+    
+       
+})
