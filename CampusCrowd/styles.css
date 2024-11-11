@@ -394,7 +394,7 @@ body{
     max-width: 200px;
     border-radius: 5px;
     margin: 15px 0;
-    overflow-x: scroll; /* Enables horizontal scrolling */
+    overflow-x: auto; /* Enables horizontal scrolling */
     display: flex;
     cursor: pointer;
 }
@@ -402,7 +402,7 @@ body{
 .progress-fill {
     background-color: #004d40;
     height: 100%;
-    width: 70%;
+    width: 300%;
     min-width: 100%; /* Ensure it stays full width for scrolling */
     border-radius: 5px;
     transition: width 2s ease;

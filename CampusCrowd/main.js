@@ -29,11 +29,14 @@ function stopScroll() {
 function updateProgress(event) {
     // Calculate the fill level as a percentage based on cursor position
     const rect = progressBar.getBoundingClientRect();
-    const offsetX = event.clientX - rect.left;
-    const percentage = Math.min(Math.max(offsetX / rect.width, 0), 1) * 100;
+    const offsetX = event.pageX - rect.left; // Use pageX for more consistent results
+    let percentage = offsetX / rect.width;
+
+    // Constrain percentage to 0-1 range
+    percentage = Math.max(0, Math.min(percentage, 1));
 
     // Set the width of the progress fill
-    progressFill.style.width = percentage + "%";
+    progressFill.style.width = percentage * 300 + "%"; // Adjust for 300% width in CSS
 }
 
 // Attach the mousedown event to start the scroll on click
