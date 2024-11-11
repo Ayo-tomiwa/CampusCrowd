@@ -526,8 +526,8 @@ body{
 }
 
 .pagination-dot {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: #ddd;
     border-radius: 50%;
     cursor: pointer;
