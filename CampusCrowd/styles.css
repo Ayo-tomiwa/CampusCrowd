@@ -469,7 +469,7 @@ body{
 
 .testimonial-content {
     max-width: 600px;
-    margin-bottom: 1.5rem;
+    margin: 2.5rem;
     display: none;
 }
 
@@ -542,10 +542,62 @@ body{
 }
 
 .pagination-dot.active {
-    background-color: #2ecc71; /* Adjust color as needed */
+    background-color: #004d40;
 }
 
 
+.how-campuscrowd-works {
+    text-align: center;
+    margin: 0 auto;
+    padding: 4rem 0; 
+    width: 90%;
+    background-color: #f8f8f8;
+}
 
+.how-campuscrowd-works-title {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
 
+.how-campuscrowd-works-steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.how-campuscrowd-works-step {
+    background-color: #f28a42;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    height: 22rem;
+    max-width: 270px;
+    text-align: center;
+    color: #fff;
+}
+
+.browse-and-select .step-icon,
+.secure-investment .step-icon,
+.receive-returns .step-icon {
+    width: 40px;
+    margin: 2rem auto;
+    font-size: 2.7rem;
+}
+
+.step-title {
+    font-size: 1.5rem;
+    width: 90%;
+    line-height: 1.3;
+    margin: 2rem auto;
+}
+
+.step-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
 

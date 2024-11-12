@@ -63,6 +63,21 @@ document.addEventListener("DOMContentLoaded", function(){
         currentIndex = index  
     }
 
+      // Auto-cycle testimonials
+      function autoCycle(){
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        updateTestimonial(currentIndex);
+      }
+      let cycleInterval = setInterval(autoCycle, intervalTime);
     
+      // Click event for pagination dots
+      dots.forEach((dot) =>{
+        dot.addEventListener("click", (event) =>{
+            clearInterval(cycleInterval); // Stop auto-cycling on manual click
+            const index = parseInt(event.target.getAttribute("data-index"));
+            updateTestimonial(index);
+            cycleInterval  = setInterval(autoCycle, intervalTime); // Restart auto-cycling
+        });
+      });
        
-})
+});
