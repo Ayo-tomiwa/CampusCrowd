@@ -609,3 +609,43 @@ body{
     line-height: 1.5;
     width: 90%;
 }
+
+.impact-section {
+    width: 76%;
+    margin: 5rem auto;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d42; /* Dark green */
+    padding: 20px 40px;
+}
+
+.impact-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.impact-title {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.impact-subtitle {
+    color: white;
+    font-size: 13px;
+    margin: 1.5rem 0 0;
+}
+
+.impact-button {
+    background-color: white;
+    color: #ff6600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
