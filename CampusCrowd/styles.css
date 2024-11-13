@@ -550,11 +550,10 @@ body{
     background-color: #004d40;
 }
 
-
 .how-campuscrowd-works {
     text-align: center;
     margin: 0 auto;
-    padding: 4rem 0; 
+    padding: 4rem 0;
     width: 90%;
     background-color: #f8f8f8;
 }
@@ -567,47 +566,46 @@ body{
 
 .how-campuscrowd-works-steps {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 85%;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .how-campuscrowd-works-step {
     background-color: #f28a42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 12px;
-    padding: 3rem 3rem;
-    width: 38%;
-    max-width: 32%;
+    padding: 3.5rem 2rem;
+    width: calc(33.333% - 2rem); /* Allows three cards in a row with space between */
     text-align: center;
     color: #fff;
     transition: transform 0.3s ease;
-    margin: 0 auto;
 }
 
-.how-campuscrowd-works-step:hover{
+.how-campuscrowd-works-step:hover {
     transform: translateY(-10px);
+    
 }
 
-.browse-and-select .step-icon,
-.secure-investment .step-icon,
-.receive-returns .step-icon {
-    width: 40px;
-    margin: 2rem auto;
-    font-size: 2.7rem;
+.step-icon {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
 }
 
 .step-title {
     font-size: 1.5rem;
-    width: 90%;
-    line-height: 1.3;
-    margin: 2rem auto;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .step-description {
     font-size: 0.9rem;
     line-height: 1.5;
-    width: 320px;
+    width: 90%;
 }
-
