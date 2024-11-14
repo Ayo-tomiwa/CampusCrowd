@@ -581,7 +581,7 @@ body{
     align-items: center;
     border-radius: 12px;
     padding: 3.5rem 2rem;
-    width: calc(33.333% - 2rem); /* Allows three cards in a row with space between */
+    width: calc(33.333% - 2rem);
     text-align: center;
     color: #fff;
     transition: transform 0.3s ease;
@@ -617,7 +617,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #004d42; /* Dark green */
+    background-color: #004d42;
     padding: 20px 40px;
 }
 
@@ -647,5 +647,144 @@ body{
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.impact-button:hover{
+    background-color: #EE914E;
+    color: #ffffff;
+}
+
+.footer{
+    background-color: #313131;
+    padding: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    margin: 0 auto;
+    width: 100%;
+    color: #fff;
+}
+
+.footer-logo-subscribe {
+    max-width: 40%;
+}
+
+
+.footer-subscribe-text{
+    font-size: 15px;
+    margin: 1.5rem 0;
+    line-height: 1.5rem;
+}
+
+.footer-subscribe-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 1rem;
+}
+
+.subscribe-input {
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    flex: 1;
+}
+
+.subscribe-input:focus{
+    border: none;
+}
+
+.subscribe-button {
+    padding: 1rem 2.5rem;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #ffff;
+    color: #004d40;
+}
+
+.footer-subscribe-disclaimer{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 50%;
+}
+
+.footer-links-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+
+}
+
+.social-links li, .footer-links-column ul li {
+    list-style-type: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.social-links li a, .footer-links-column li a{
+    line-height: 2.8rem;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.social-links li ion-icon {
+    margin-right: 1rem;
+    margin-bottom: -0.2rem;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 20px;
+    border-top: 1px solid #fff;
+    font-size: 14px;
+    color: white;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+}
+
+
+.footer-bottom-links a{
+    text-decoration: none;
+    color: white;
+    margin-right: 1.2rem;
+    font-size: 14px;
+    border-bottom: 1px solid #fff;
+    
+
 }
 
