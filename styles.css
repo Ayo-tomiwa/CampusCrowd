@@ -39,13 +39,13 @@ body{
     justify-content: space-between;
 }
 
-
 .logo svg{
     width: 14rem;
 }
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 1.25rem;
 } 
 
@@ -80,30 +80,73 @@ body{
 
 .nav-btns{
     display: flex; 
-    width: 19%;
+    width: 20%;
+    align-items: center;
+    gap: 20px;
     gap: 30px;
 }
 
-.nav-btns a{
-    padding: 0.8rem 1.099rem;
-    width: 100%;
-    background-color: #EE914E;
-    text-decoration: none;
-    margin: 0 auto;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 13px;
-    transition: ease 0.5s;
+.login-btn{
+    width: 40%;
 }
 
+.sign-up-btn{
+    width: 100%;
+}
 
-.nav-btns a:hover{
+.nav-btn {
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    background-color: #f28c4e;
+    color: white;
+    transition: all 0.3s ease;
+    will-change: transition;
+  }
+
+
+.nav-btn:hover{
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 2px transparent;
     color: #004225;
+}
+
+.sign-up-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background-color: #fff;
+    padding: 15px 10px;
+    width: 180px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.sign-up-dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
 }
 
 .hero-wrapper {
