@@ -36,7 +36,7 @@ function updateProgress(event) {
     percentage = Math.max(0, Math.min(percentage, 1));
 
     // Set the width of the progress fill
-    progressFill.style.width = percentage * 300 + "%"; // Adjust for 300% width in CSS
+    progressFill.style.width = percentage * 100 + "%"; // Adjust for 300% width in CSS
 }
 
 // Attach the mousedown event to start the scroll on click
@@ -45,39 +45,20 @@ document.querySelectorAll(".progress-bar").forEach(bar => {
 });
 
 
+/// Dropdown functionality
+document.addEventListener("DOMContentLoaded", function () {
+    const signUpDropdown = document.querySelector(".sign-up-dropdown");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
 
-document.addEventListener("DOMContentLoaded", function(){
-    const testimonials = document.querySelectorAll(".testimonial-content");
-    const dots = document.querySelectorAll(".pagination-dot")
-    let currentIndex = 0;
-    const intervalTime = 5000; // 5 seconds
+    // Show dropdown on hover
+    signUpDropdown.addEventListener("mouseenter", () => {
+        dropdownMenu.style.visibility = "visible";
+        dropdownMenu.style.opacity = "1";
+    });
 
-    // Function to update active testimonial and dot
-    function updateTestimonial(index){
-        testimonials.forEach((testimonial, i) =>{
-            testimonial.classList.toggle("active", i == index);
-        });
-        dots.forEach((dot, i) => {
-            dot.classList.toggle("active", i === index);
-        });
-        currentIndex = index  
-    }
-
-      // Auto-cycle testimonials
-      function autoCycle(){
-        currentIndex = (currentIndex + 1) % testimonials.length;
-        updateTestimonial(currentIndex);
-      }
-      let cycleInterval = setInterval(autoCycle, intervalTime);
-    
-      // Click event for pagination dots
-      dots.forEach((dot) =>{
-        dot.addEventListener("click", (event) =>{
-            clearInterval(cycleInterval); // Stop auto-cycling on manual click
-            const index = parseInt(event.target.getAttribute("data-index"));
-            updateTestimonial(index);
-            cycleInterval  = setInterval(autoCycle, intervalTime); // Restart auto-cycling
-        });
-      });
-       
+    // Hide dropdown when not hovering
+    signUpDropdown.addEventListener("mouseleave", () => {
+        dropdownMenu.style.visibility = "hidden";
+        dropdownMenu.style.opacity = "0";
+    });
 });
