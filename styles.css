@@ -144,6 +144,15 @@ body{
     text-align: center;
 }
 
+
+.drop-down-img{
+    width: 20%;
+    border-radius: 50%;
+    align-items: center;
+    margin-bottom: -5px;
+    margin-right: 4px;
+}
+
 .sign-up-dropdown:hover .dropdown-menu {
     visibility: visible;
     opacity: 1;
