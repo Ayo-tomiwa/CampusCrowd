@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.signup-page {
+    display: flex;
+    height: 97vh; 
+    max-width: 60%;
+    margin: 2rem auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.signup-left {
+    flex: 1;
+    background-color: #f3f3f3;
+}
+
+.signup-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.signup-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+h2 span {
+    color: #ff9800;
+}
+
+p {
+    font-size: 15px;
+    color: #555;
+    width: 81%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 97%;
+    padding: 10px 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row div {
+    flex: 1;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.signup-btn:hover {
+    background-color: #00332b;
+}
+
+.horizontal{
+    display: flex;
+    width: 100%;
+    margin: 2rem auto;
+    color: #c4b8b8;
+}
+.horizontal hr{
+    width: 80%;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.google-btn, .facebook-btn {
+    flex: 1;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.google-btn {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #858585;
+}
+
+
+.facebook-btn {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #858585;
+
+}
+
+
+.google-btn ion-icon{
+    color: ;
+    margin-right: 5px;
+    margin-bottom: -2px;
+    font-size: 15px;
+    
+}
+
+.facebook-btn ion-icon{
+    color: rgb(71, 71, 237);
+    margin-right: 5px;
+    margin-bottom: -2px;
+    font-size: 15px;
+}
+
+.login-redirect {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-redirect a span {
+    color: #004d40;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-redirect span:hover {
+    text-decoration: underline;
+}
+
+.privacy-text {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.privacy-text a {
+    color: #004d40;
+    text-decoration: none;
+}
+
+.privacy-text a:hover {
+    text-decoration: underline;
+}

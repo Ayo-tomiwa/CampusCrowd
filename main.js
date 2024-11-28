@@ -62,3 +62,23 @@ document.addEventListener("DOMContentLoaded", function () {
         dropdownMenu.style.opacity = "0";
     });
 });
+
+// Get references to the forms and toggle links
+const signupForm = document.getElementById("signupForm");
+const loginForm = document.getElementById("loginForm");
+const toggleSignup = document.getElementById("toggleSignup");
+const toggleLogin = document.getElementById("toggleLogin");
+
+// Event listener for "Already have an account? Login"
+toggleLogin.addEventListener("click", (e) => {
+    e.preventDefault(); // Prevent default behavior
+    signupForm.classList.add("hidden");
+    loginForm.classList.remove("hidden");
+});
+
+// Event listener for "Don't have an account? Sign Up"
+toggleSignup.addEventListener("click", (e) => {
+    e.preventDefault(); // Prevent default behavior
+    loginForm.classList.add("hidden");
+    signupForm.classList.remove("hidden");
+});
