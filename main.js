@@ -63,22 +63,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Get references to the forms and toggle links
-const signupForm = document.getElementById("signupForm");
-const loginForm = document.getElementById("loginForm");
-const toggleSignup = document.getElementById("toggleSignup");
-const toggleLogin = document.getElementById("toggleLogin");
-
-// Event listener for "Already have an account? Login"
-toggleLogin.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent default behavior
-    signupForm.classList.add("hidden");
-    loginForm.classList.remove("hidden");
+// Toggle between Sign-up and Login sectionsdocument.getElementById('toggleLogin').addEventListener('click', () => {
+document.getElementById('toggleLogin').addEventListener('click', () => {
+    console.log('Switching to Login page');
+    console.log('Signup Page Style:', document.getElementById('signup-page').style.display);
+    console.log('Login Page Style:', document.getElementById('login-page').style.display);
+    
+    document.getElementById('signup-page').style.display = 'none';
+    document.getElementById('login-page').style.display = 'flex'; // Ensure 'flex' or correct layout is used
 });
+      
 
-// Event listener for "Don't have an account? Sign Up"
-toggleSignup.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent default behavior
-    loginForm.classList.add("hidden");
-    signupForm.classList.remove("hidden");
+// Toggle back to the Sign-up section
+document.getElementById('toggleSignup').addEventListener('click', () => {
+    console.log('Switching to Sign-up page');
+    console.log('Login Page Style:', document.getElementById('login-page').style.display);
+    console.log('Signup Page Style:', document.getElementById('signup-page').style.display);
+
+    // Switch to Sign-up page
+    document.getElementById('login-page').style.display = 'none';
+    document.getElementById('signup-page').style.display = 'flex'; // Ensure 'flex' or correct layout is used
 });
