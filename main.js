@@ -143,7 +143,7 @@ document.querySelector(".login-btn").addEventListener("click", function (e) {
 
     if (email && password) {
         alert("Login successful!");
-        window.location.href = "https://www.mainwebsite.com"; 
+        window.location.href = "./index.html"; 
     } else {
         alert("Invalid login credentials.");
     }
@@ -177,7 +177,7 @@ loginForm.addEventListener('submit', function(event) {
 
   if (email && password) {
     alert('Login successful! Welcome back.');
-    window.location.href = 'main-page.html';
+    window.location.href = './index.html';
   } else {
     alert('Please enter your email and password.');
   }
