@@ -150,7 +150,7 @@ document.querySelector(".login-btn").addEventListener("click", function (e) {
 });
 
 // Signup Form Functionality
-const signupForm = document.getElementById('signup-form');
+const signupForm = document.getElementById('signup-page');
 signupForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
@@ -168,7 +168,7 @@ signupForm.addEventListener('submit', function(event) {
 });
 
 // Login Form Functionality
-const loginForm = document.getElementById('login-form');
+const loginForm = document.getElementById('login-page');
 loginForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
